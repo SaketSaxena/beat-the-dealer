@@ -10,20 +10,20 @@ public class CardTest {
     @Test
     public void should_return_valid_card_for_valid_input() {
         Card card1 = Card.fromString("CA");
-        assertThat(card1.getSuit()).isEqualTo(Suit.CLUBS);
-        assertThat(card1.getRank()).isEqualTo(Rank.ACE);
+        assertThat(card1.suit()).isEqualTo(Suit.CLUBS);
+        assertThat(card1.rank()).isEqualTo(Rank.ACE);
 
         Card card2 = Card.fromString("D5");
-        assertThat(card2.getSuit()).isEqualTo(Suit.DIAMONDS);
-        assertThat(card2.getRank()).isEqualTo(Rank.FIVE);
+        assertThat(card2.suit()).isEqualTo(Suit.DIAMONDS);
+        assertThat(card2.rank()).isEqualTo(Rank.FIVE);
 
         Card card3 = Card.fromString("H9");
-        assertThat(card3.getSuit()).isEqualTo(Suit.HEARTS);
-        assertThat(card3.getRank()).isEqualTo(Rank.NINE);
+        assertThat(card3.suit()).isEqualTo(Suit.HEARTS);
+        assertThat(card3.rank()).isEqualTo(Rank.NINE);
 
         Card card4 = Card.fromString("HQ");
-        assertThat(card4.getSuit()).isEqualTo(Suit.HEARTS);
-        assertThat(card4.getRank()).isEqualTo(Rank.QUEEN);
+        assertThat(card4.suit()).isEqualTo(Suit.HEARTS);
+        assertThat(card4.rank()).isEqualTo(Rank.QUEEN);
     }
 
     @Test
