@@ -2,21 +2,9 @@ package com.beatthedealer.cards;
 
 /**
  * Represents a playing card.
+ * A card has a suit and a rank.
  */
-public final class Card {
-    private final Suit suit;
-    private final Rank rank;
-
-    /**
-     * Constructs a card with the specified suit and rank.
-     *
-     * @param suit the suit of the card
-     * @param rank the rank of the card
-     */
-    public Card(Suit suit, Rank rank) {
-        this.suit = suit;
-        this.rank = rank;
-    }
+public record Card(Suit suit, Rank rank) {
 
     /**
      * Creates a card from the specified string representation.
@@ -47,23 +35,5 @@ public final class Card {
     @Override
     public String toString() {
         return suit.toString() + rank.toString();
-    }
-
-    /**
-     * Returns the suit of the card.
-     *
-     * @return the suit of the card
-     */
-    public Suit getSuit() {
-        return suit;
-    }
-
-    /**
-     * Returns the rank of the card.
-     *
-     * @return the rank of the card
-     */
-    public Rank getRank() {
-        return rank;
     }
 }

@@ -47,7 +47,7 @@ public class Player {
      */
     public int getScore() {
         return hand.stream()
-                .mapToInt(card -> card.getRank().getValue())
+                .mapToInt(card -> card.rank().getValue())
                 .sum();
     }
 
