@@ -6,7 +6,6 @@ import java.util.Arrays;
  * Represents the ranks of playing cards.
  */
 public enum Rank {
-    ONE("1", 1),
     TWO("2", 2),
     THREE("3", 3),
     FOUR("4", 4),
